@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>clase_01_javascript</title>
+        
+        <!--<script type="text/javascript" src="js/11_ejercice_1_plus.js"></script>
+            <script type="text/javascript" src="js/12_ejercice_2.js"></script>
+        -->
+        <script type="text/javascript" src="js/32_ejercice_DOM.js"></script>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                float: left;
+            }
+
+            .viewSubmit{
+                border: 1px solid #ccc;
+                display: none;
+            }
+            .box label,
+            .box input{
+                display: block;
+                margin: 10px;
+            }
+
+        </style>        
+    </head>
+    <body>
+        
+        <h1>Aprendiendo javascript</h1>
+
+        <div class="box">
+            <form action="#" onsubmit="return false" id="form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" id="surname">
+
+                <label for="age">Edad</label>
+                <input type="text" name="age" id="age">
+
+                <input type="submit" value="enviar" id="submit">
+            </form>
+        </div>
+
+        <div class="box viewSubmit">
+            <p>
+                Nombre: <span id="boxName"></span>
+            </p>
+            <p>
+                apellido: <span id="boxSurName"></span>
+            </p>
+            <p>
+                edad: <span id="boxAge"></span>
+            </p>
+        </div>
+
+        
+    </body>
+</html>
